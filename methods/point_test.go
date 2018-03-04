@@ -16,3 +16,14 @@ func TestCalcDistanceBetweenTwoPoints(t *testing.T) {
 		t.Errorf("Distance between {0,0} and {10,10} should be %d, was %d", expected, d)
 	}
 }
+
+func TestCanScaleAPoint(t *testing.T) {
+	expected := &Point{2,4}
+	p := Point{1,2}
+
+	p.ScaleBy(2)
+
+	if p.X != expected.X || p.Y != expected.Y {
+		t.Errorf("Point did not scale %s - %s", p, expected)
+	}
+}
