@@ -7,9 +7,9 @@ import
 
 
 func TestCalcDistanceBetweenTwoPoints(t *testing.T) {
-	var expected float64 = 7.0710678118654755
-	a := Point{5, 5}
-	b := Point{0, 0}
+	var expected float64 = 5
+	a := Point{1, 1}
+	b := Point{5, 4}
 	d := a.Distance(b)
 
 	if d != expected {

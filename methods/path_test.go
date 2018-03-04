@@ -7,12 +7,13 @@ import
 
 
 func TestCalcDistanceOfPath(t *testing.T) {
-	var expected float64 = 15.142135623730951
+	var expected float64 = 19.62266869472574
 
 	path := Path{
-		Point{0,0},
-		Point{5, 5},
-		Point{10,10},
+		Point{1,1},
+		{5, 1},
+		{10,1},
+		{12,1},
 	}
 
 	d := path.Distance()
